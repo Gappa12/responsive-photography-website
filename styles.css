@@ -131,15 +131,18 @@ main .image-box img {
   margin-top: 40px;
   color: #fff;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 2px;
   border-radius: 10px;
   transform: scale(1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 10px 18px 2px rgba(0, 0, 0, 0.5);
 }
 
 .content button:hover {
   transform: scale(0.95);
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 .content button:focus {
@@ -158,7 +161,13 @@ main .image-box img {
 }
 
 .gallery img {
+  display: block;
   width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
 }
 
 @media screen and (max-width: 768px) {
